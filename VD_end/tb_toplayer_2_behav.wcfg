@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_toplayer_2_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_toplayer_2" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1982278000000000fs"></ZoomStartTime>
+      <ZoomEndTime time="2309030767527676fs"></ZoomEndTime>
+      <Cursor1Time time="2084765030405000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="154"></NameColumnWidth>
+      <ValueColumnWidth column_width="143"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/tb_toplayer_2/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_toplayer_2/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_toplayer_2/button_shang" type="logic">
+      <obj_property name="ElementShortName">button_shang</obj_property>
+      <obj_property name="ObjectShortName">button_shang</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_toplayer_2/button_xia" type="logic">
+      <obj_property name="ElementShortName">button_xia</obj_property>
+      <obj_property name="ObjectShortName">button_xia</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_toplayer_2/button_zuo" type="logic">
+      <obj_property name="ElementShortName">button_zuo</obj_property>
+      <obj_property name="ObjectShortName">button_zuo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_toplayer_2/button_you" type="logic">
+      <obj_property name="ElementShortName">button_you</obj_property>
+      <obj_property name="ObjectShortName">button_you</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_toplayer_2/button_zhong" type="logic">
+      <obj_property name="ElementShortName">button_zhong</obj_property>
+      <obj_property name="ObjectShortName">button_zhong</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_toplayer_2/sw" type="array">
+      <obj_property name="ElementShortName">sw[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_toplayer_2/v_sig" type="logic">
+      <obj_property name="ElementShortName">v_sig</obj_property>
+      <obj_property name="ObjectShortName">v_sig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_toplayer_2/h_sig" type="logic">
+      <obj_property name="ElementShortName">h_sig</obj_property>
+      <obj_property name="ObjectShortName">h_sig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_toplayer_2/rgb" type="array">
+      <obj_property name="ElementShortName">rgb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">rgb[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_toplayer_2/led" type="array">
+      <obj_property name="ElementShortName">led[6:0]</obj_property>
+      <obj_property name="ObjectShortName">led[6:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

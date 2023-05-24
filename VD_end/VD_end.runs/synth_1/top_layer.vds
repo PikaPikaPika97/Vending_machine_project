@@ -1,0 +1,739 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Sep  1 10:25:03 2022
+# Process ID: 16600
+# Current directory: D:/Code/Project/Vivado/VD_end/VD_end.runs/synth_1
+# Command line: vivado.exe -log top_layer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_layer.tcl
+# Log file: D:/Code/Project/Vivado/VD_end/VD_end.runs/synth_1/top_layer.vds
+# Journal file: D:/Code/Project/Vivado/VD_end/VD_end.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_layer.tcl -notrace
+Command: synth_design -top top_layer -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23172 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 404.945 ; gain = 99.535
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_layer' [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1678]
+INFO: [Synth 8-638] synthesizing module 'clk_50M' [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1]
+INFO: [Synth 8-256] done synthesizing module 'clk_50M' (1#1) [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1]
+INFO: [Synth 8-638] synthesizing module 'key_filter' [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:972]
+INFO: [Synth 8-226] default block is never used [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1008]
+INFO: [Synth 8-256] done synthesizing module 'key_filter' (2#1) [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:972]
+WARNING: [Synth 8-350] instance 'M1_sw0' of module 'key_filter' requires 5 connections, but only 4 given [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1711]
+WARNING: [Synth 8-350] instance 'M1_sw1' of module 'key_filter' requires 5 connections, but only 4 given [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1717]
+WARNING: [Synth 8-350] instance 'M1_shang' of module 'key_filter' requires 5 connections, but only 4 given [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1723]
+WARNING: [Synth 8-350] instance 'M1_xia' of module 'key_filter' requires 5 connections, but only 4 given [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1730]
+WARNING: [Synth 8-350] instance 'M1_zuo' of module 'key_filter' requires 5 connections, but only 4 given [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1737]
+WARNING: [Synth 8-350] instance 'M1_you' of module 'key_filter' requires 5 connections, but only 4 given [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1744]
+WARNING: [Synth 8-350] instance 'M1_zhong' of module 'key_filter' requires 5 connections, but only 4 given [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1751]
+INFO: [Synth 8-638] synthesizing module 'vga_driver' [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:862]
+	Parameter C_H_SYNC_PULSE bound to: 120 - type: integer 
+	Parameter C_H_BACK_PORCH bound to: 64 - type: integer 
+	Parameter C_H_ACTIVE_TIME bound to: 800 - type: integer 
+	Parameter C_H_FRONT_PORCH bound to: 56 - type: integer 
+	Parameter C_H_LINE_PERIOD bound to: 1040 - type: integer 
+	Parameter C_V_SYNC_PULSE bound to: 6 - type: integer 
+	Parameter C_V_BACK_PORCH bound to: 23 - type: integer 
+	Parameter C_V_ACTIVE_TIME bound to: 600 - type: integer 
+	Parameter C_V_FRONT_PORCH bound to: 37 - type: integer 
+	Parameter C_V_FRAME_PERIOD bound to: 666 - type: integer 
+	Parameter C_IMAGE_WIDTH bound to: 80 - type: integer 
+	Parameter C_IMAGE_HEIGHT bound to: 80 - type: integer 
+	Parameter C_IMAGE_PIX_NUM bound to: 640 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_driver' (3#1) [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:862]
+INFO: [Synth 8-638] synthesizing module 'vga_display' [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:14]
+	Parameter NUM_0 bound to: 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011110000000000011000100000000011000011000000011000000110000001100000011000000110000000100000110000000011000011000000001100001100000000110000110000000011000011000000001100001100000000110000110000000011000011000000001100001100000000110000110000000011000001100000001000000110000001100000011000000110000000110000110000000001100010000000000011110000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter NUM_1 bound to: 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000110000000000111111000000000000001100000000000000110000000000000011000000000000001100000000000000110000000000000011000000000000001100000000000000110000000000000011000000000000001100000000000000110000000000000011000000000000001100000000000000110000000000000011000000000000001100000000000000110000000000000111100000000011111111110000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter NUM_2 bound to: 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111000000000100000111000000100000001100000100000000011000010000000001100001100000000110000110000000011000000000000001100000000000001100000000000000110000000000000110000000000000110000000000000110000000000000110000000000000110000000000000010000000000000010000000100000010000000010000010000000001000010000000001100001111111111100000111111111110000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter NUM_3 bound to: 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111110000000001100001100000001100000011000000110000000110000011000000011000001100000001100000000000000110000000000000011000000000000011000000000000011000000000001111000000000000000111000000000000000110000000000000001000000000000000110000000000000011000011000000001100001100000000110000110000000010000011000000011000000110000011000000000111110000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter NUM_4 bound to: 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011000000000000001100000000000001110000000000000111000000000000101100000000000010110000000000010011000000000010001100000000001000110000000001000011000000000100001100000000100000110000000110000011000000010000001100000010000000110000001111111111111000000000001100000000000000110000000000000011000000000000001100000000000000110000000000011111111000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter NUM_5 bound to: 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111111000000111111111100000100000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100111110000000010100001100000001100000011000000100000000100000000000000011000000000000001100000000000000110000000000000011000011000000001100001100000000110000100000000110000010000000011000000110000011000000000111110000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter NUM_6 bound to: 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111000000000011000011000000011000001100000001000000110000001100000000000000100000000000000010000000000000011000000000000001100111110000000110110001100000011100000011000001110000000100000110000000011000011000000001100001100000000110000110000000011000011000000001100000110000000110000011000000010000000110000011000000011100011000000000011111000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter NUM_7 bound to: 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111000001111111111100000100000000100000110000000100000010000000010000001000000010000000000000001000000000000001000000000000000100000000000000010000000000000010000000000000001000000000000001000000000000000100000000000000010000000000000001000000000000001100000000000000110000000000000011000000000000001100000000000000110000000000000011000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter NUM_8 bound to: 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111000000000110000110000000110000001100000110000000011000011000000001100001100000000110000111000000011000011100000001000000111100001100000001111001000000000011111000000000110001111000000110000011110000011000000111000011000000001110001100000000011000110000000001100011000000000110001100000000011000011000000011000000110000011000000000111110000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter NUM_9 bound to: 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111110000000001100000100000001100000001000000110000000110000110000000001000011000000000110001100000000011000110000000001100011000000000110001100000000011000111000000011100001100000010110000011000011011000000111110001100000000000000110000000000000110000000000000011000000000000001000000110000001100000011000001100000001100001100000000001111100000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter HUA bound to: 1024'b0000000000000000000000000000000000000000000000000000000000000000000000000001000000010000000000000000000000011000000111000000000000000000000110000001100000000000000000000001100000011000000000000000000000011000000110000011100000111111111111111111111111111100000000000001100000011000000000000000000000011000000110000000000000000000000110000001100000000000000000000011000000010000000000000000000000110000000000000000000000000000011000000011000000000000000000000110000000110000001000000000000011000000001100000111000000000001100000000011000011100000000000011100000000110011100000000000001111000000001101110000000000000110110000000011110000000000000011001100000000111000000000000000100011000000111100000000000000110000110000110011000000000000010000001100110000110000000010000000000011000000001100000000100000000000110000000011000000001000000000001100000000110000000010000000000011000000001100000000110000000000110000000011111111111100000000001100000000111111111111000000000010000000000000000000000000000000000000000000000000000000 
+	Parameter FEI bound to: 1024'b0000000000000000000000000000000000000000000000000000000000000000000000000000100000100000000000000000000000001100001100000000000000000000000011000011000001000000000011111111111111111111111000000000000000001100001100000110000000000000000011000011000001000000000000000000110000110000010000000000001111111111111111111100000000000110000011000011000001100000000001100000110000110000000010000000111111111111111111111111110000000100000110000011000000011000000000000011000000110000000100000000000001100000001100001111000000000001100000000011000101100000000001101111111111111111110000000001100011000010000000110000000000000000110000011000001100000000000000001100000110000011000000000000000011000001100000110000000000000000110000110000001100000000000000001100001100000011000000000000000011000011000000110000000000000000000001100011100000000000000000000000110000001111000000000000000000011000000000111100000000000000011100000000000111100000000000011100000000000000111000000001111000000000000000000100000000000000000000000000000000000000 
+	Parameter TOU bound to: 1024'b0000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000111000000100000000000000000000001100000001111111111000000000000011000000011000001100000000000000110000000110000011000000000000001100000001100000110000000000000011001000011000001100000000011111111111000100000011000000000000001100000011000000110000000000000011000000110000001100000000000000110000001000000011000110000000001100000110000000011111110000000011001111000000000010000000000000111100111111111111110000000000001100010001000000011000000000011111000000010000000110000000011110110000000010000011000000000110001100000000100000110000000000000011000000000100011000000000000000110000000001000110000000000000001100000000011011000000000000000011000000000011110000000000000000110000000000111000000000000000001100000000011111000000000000000011000000001100111000000000000000110000001110000011110000000001111100000110000000011111110000000110000110000000000001110000000000001110000000000000000000000000000000000000000000000000000 
+	Parameter BI bound to: 1024'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000011111100000000000000000000011111111111100000000001111111111110000000000000000000000000000001100000000000000000000000000000011000000000000000000000000000000110000000000000000000000000000001100000000000000000000010000000011000000000100000000000111111111111111111111100000000001100000001100000000110000000000011000000011000000001100000000000110000000110000000011000000000001100000001100000000110000000000011000000011000000001100000000000110000000110000000011000000000001100000001100000000110000000000011000000011000000001100000000000110000000110000000011000000000001100000001100000000110000000000011000000011000000001100000000000110000000110001000011000000000001100000001100001111110000000000011000000011000000111000000000000100000000110000000000000000000000000000001100000000000000000000000000000011000000000000000000000000000000110000000000000000000000000000001100000000000000000000000000000000000000000000000 
+	Parameter ZHAO bound to: 1024'b0000000000000000000000000000000000000000000000000000000000000000000000001000000001000000000000000000000011100000001110000000000000000000110000000010001100000000000000001100000000100001110000000000000011000000001000001110000000000000110000000010000001100000000000001100100000100000000000000011111111111100001000000000000000000000110000000010000000111000000000001100001111111111110000000000000011000100001000000000000000000000110000000010000000000000000000001100010000100000011000000000000011111000001100000110000000000001110000000011000011100000000011111100000000110001110000000111110011000000001100111000000000110000110000000011011100000000000000001100000000011110000000000000000011000000000111000000000000000000110000000011100000001000000000001100000001101100000010000000000011000000110011100000100000000000110000010000011100001000000000001100011000000011100010000001000011011000000000011101100000001111100000000000000011111000000000111000000000000000001111000000000100000000000000000000110000000000000000000000000000000000 
+	Parameter LING bound to: 1024'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000001111111111111111111100000000000000000000011000000000000000000000000000000110000000000000000000011111111111111111111111100000001100000000011000000000011000000011000000000110000000001100000001100000000001100000000010000000011001111110011001111110000000000000000000000100000000000000000000000000000000000000000000000000000011111110010001111110000000000000000000001110000000000000000000000000000111100000000000000000000000000011000100000000000000000000000011110000110000000000000000000001110011000111000000000000000001110000011000011111110000000011100000000010000000111111000011000000000000100000000001000000000011111111111111111000000000000000000000000000001111000000000000000000000000000110000000000000000000001000000110000000000000000000000001111010000000000000000000000000000011110000000000000000000000000000001111000000000000000000000000000000111000000000000000000000000000000110000000000000000000000000000000000000000000 
+	Parameter YUAN bound to: 1024'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000011111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001100000001111111111111111111111111100000000000000011000011000000000000000000000000100000110000000000000000000000011000001100000000000000000000000110000011000000000000000000000001100000110000000000000000000000011000001100000000000000000000000110000011000000000000000000000011000000110000000010000000000000110000001100000000100000000000001100000011000000001000000000000110000000110000000010000000000001100000001100000000100000000000110000000011000000001000000000011000000000110000000111000000001100000000001111111111110000000110000000000001111111111000000110000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000 
+	Parameter SHU bound to: 1024'b0000000000000000000000000000000000000000000000000000000000000000000000000110000000001000000000000000000001110000000011100000000000001100011000011000110000000000000001100110001100011000000000000000011101100110000110000000000000000010011001000001000000000000000000000110100100010000000010000011111111111111111111111111110000000000111000000011000001100000000000011111100000110000011000000000000101101110011100000110000000000010011001100101000001100000000001000110001010010000010000000001100001100000100100000100000000100000010000010000100011000000000000001110000000001000110000000000000011000010000010001100000000111111111111110000110010000000000000011000011000001101100000000000000100000110000001011000000000000011000011000000011100000000000000111000110000000111000000000000000001111000000001110000000000000000001111110000110110000000000000001110001100011000111000000000000110000001001100000111000000000110000000001100000000111110001110000000000100000000000100000000000000000110000000000000000000000000000000000000000000000000 
+	Parameter LIANG bound to: 1024'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000111111111111111111000000000000001100000000000000100000000000000011000000000000001000000000000000111111111111111110000000000000001100000000000000100000000000000011000000000000001000000000000000111111111111111110000000000000001100000000000000110000000000000010000000000000000000010000111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000000000111111111111111111000000000000001100000011000000110000000000000011000000110000001100000000000000111111111111111111000000000000001100000011000000110000000000000011000000110000001100000000000000110000001100000011000000000000001111111111111111110000000000000011000000110000001000000000000000000000001100000001100000000000111111111111111111111100000000000000000000110000000000000000000000000000001100000000000000000000000000000011000000000011000001111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:107]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:108]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:109]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:110]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:115]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:116]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:117]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:118]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:123]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:124]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:125]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:126]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:131]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:132]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:133]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:134]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:139]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:140]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:141]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:142]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:143]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:144]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:145]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:146]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:151]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:152]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:153]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:154]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:155]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:156]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:157]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:158]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:163]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:164]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:165]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:166]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:167]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:168]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:169]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:170]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:175]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:176]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:177]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:178]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:179]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:180]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:181]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:182]
+INFO: [Synth 8-638] synthesizing module 'image_rom' [D:/Code/Project/Vivado/VD_end/VD_end.runs/synth_1/.Xil/Vivado-16600-LAPTOP-VJ22D1I9/realtime/image_rom_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'image_rom' (4#1) [D:/Code/Project/Vivado/VD_end/VD_end.runs/synth_1/.Xil/Vivado-16600-LAPTOP-VJ22D1I9/realtime/image_rom_stub.v:6]
+WARNING: [Synth 8-689] width (21) of port connection 'addra' does not match port width (17) of module 'image_rom' [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:214]
+WARNING: [Synth 8-689] width (8) of port connection 'douta' does not match port width (3) of module 'image_rom' [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:215]
+WARNING: [Synth 8-5788] Register R_pic_addr_reg in module vga_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:214]
+INFO: [Synth 8-256] done synthesizing module 'vga_display' (5#1) [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:14]
+INFO: [Synth 8-638] synthesizing module 'sale' [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1066]
+WARNING: [Synth 8-5788] Register quantity_reg in module sale is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1175]
+INFO: [Synth 8-256] done synthesizing module 'sale' (6#1) [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1066]
+INFO: [Synth 8-256] done synthesizing module 'top_layer' (7#1) [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1678]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 468.758 ; gain = 163.348
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 468.758 ; gain = 163.348
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Code/Project/Vivado/VD_end/VD_end.runs/synth_1/.Xil/Vivado-16600-LAPTOP-VJ22D1I9/dcp1/image_rom_in_context.xdc] for cell 'M3/image_rom_m1'
+Finished Parsing XDC File [D:/Code/Project/Vivado/VD_end/VD_end.runs/synth_1/.Xil/Vivado-16600-LAPTOP-VJ22D1I9/dcp1/image_rom_in_context.xdc] for cell 'M3/image_rom_m1'
+Parsing XDC File [D:/Code/Project/Vivado/VD_end/VD_end.srcs/constrs_1/new/VD_end.xdc]
+Finished Parsing XDC File [D:/Code/Project/Vivado/VD_end/VD_end.srcs/constrs_1/new/VD_end.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Code/Project/Vivado/VD_end/VD_end.srcs/constrs_1/new/VD_end.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_layer_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_layer_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 826.402 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 826.402 ; gain = 520.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 826.402 ; gain = 520.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for M3/image_rom_m1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 826.402 ; gain = 520.992
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "R_v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:214]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:214]
+INFO: [Synth 8-5546] ROM "R_rgb_temp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1281]
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "allprice" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "allprice" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "allprice" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "led_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "wupin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "zhaoling" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "quantity" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "quantity" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "allprice" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "allprice" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "allprice" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "led_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "wupin" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "zhaoling" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "quantity" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "quantity" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "quantity" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "quantity" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "quantity" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'R_rgb_temp_reg' [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:224]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 826.402 ; gain = 520.992
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |vga_display__GB0 |           1|     29772|
+|2     |vga_display__GB1 |           1|     18640|
+|3     |top_layer__GC0   |           1|     10939|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 5     
+	   2 Input     20 Bit       Adders := 7     
+	   2 Input     12 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 16    
+	   3 Input     10 Bit       Adders := 14    
+	   2 Input      9 Bit       Adders := 13    
+	   3 Input      9 Bit       Adders := 40    
+	   2 Input      4 Bit       Adders := 21    
++---Registers : 
+	               21 Bit    Registers := 1     
+	               20 Bit    Registers := 7     
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 9     
+	                2 Bit    Registers := 15    
+	                1 Bit    Registers := 15    
++---Muxes : 
+	  17 Input     21 Bit        Muxes := 3     
+	   4 Input     20 Bit        Muxes := 7     
+	   2 Input     20 Bit        Muxes := 21    
+	  24 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 5     
+	   5 Input     16 Bit        Muxes := 4     
+	   8 Input     16 Bit        Muxes := 2     
+	  17 Input     16 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 27    
+	   3 Input     12 Bit        Muxes := 32    
+	  17 Input     12 Bit        Muxes := 2     
+	  10 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   8 Input     11 Bit        Muxes := 1     
+	   5 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 14    
+	   8 Input     10 Bit        Muxes := 5     
+	   3 Input     10 Bit        Muxes := 3     
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   8 Input      7 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
+	   3 Input      3 Bit        Muxes := 5     
+	   6 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 9     
+	   6 Input      2 Bit        Muxes := 7     
+	  17 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 3     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 58    
+	  10 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 28    
+	   8 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 8     
+	  17 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 11    
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vga_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 5     
+	   2 Input     10 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 11    
+	   2 Input      9 Bit       Adders := 13    
+	   3 Input      9 Bit       Adders := 40    
++---Registers : 
+	               21 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
++---Muxes : 
+	  17 Input     21 Bit        Muxes := 3     
+	   4 Input     12 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 23    
+	   3 Input     12 Bit        Muxes := 32    
+	  17 Input     12 Bit        Muxes := 2     
+	  10 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	  10 Input      1 Bit        Muxes := 1     
+Module clk_50M 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module key_filter__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     20 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module key_filter__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     20 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module key_filter__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     20 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module key_filter__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     20 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module key_filter__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     20 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module key_filter__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     20 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module key_filter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     20 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module vga_driver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 4     
++---Registers : 
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+Module sale 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 15    
+	   3 Input     10 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 21    
++---Registers : 
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 9     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  24 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 5     
+	   5 Input     16 Bit        Muxes := 4     
+	   8 Input     16 Bit        Muxes := 2     
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   8 Input     11 Bit        Muxes := 1     
+	   5 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 14    
+	   8 Input     10 Bit        Muxes := 5     
+	   3 Input     10 Bit        Muxes := 3     
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   8 Input      7 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
+	   3 Input      3 Bit        Muxes := 5     
+	   6 Input      3 Bit        Muxes := 1     
+	  17 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 3     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 49    
+	   8 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 8     
+	  17 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 11    
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x50).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: PCIN+(A:0x0):B+C.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+INFO: [Synth 8-5546] ROM "quantity" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "quantity" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "led_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "led_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "led_state" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element M1_sw0/Key_R_Flag_reg was removed.  [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1004]
+WARNING: [Synth 8-6014] Unused sequential element M1_sw1/Key_R_Flag_reg was removed.  [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1004]
+WARNING: [Synth 8-6014] Unused sequential element M1_shang/Key_R_Flag_reg was removed.  [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1004]
+WARNING: [Synth 8-6014] Unused sequential element M1_xia/Key_R_Flag_reg was removed.  [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1004]
+WARNING: [Synth 8-6014] Unused sequential element M1_zuo/Key_R_Flag_reg was removed.  [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1004]
+WARNING: [Synth 8-6014] Unused sequential element M1_you/Key_R_Flag_reg was removed.  [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1004]
+WARNING: [Synth 8-6014] Unused sequential element M1_zhong/Key_R_Flag_reg was removed.  [D:/Code/Project/Vivado/VD_end.srcs/vending_machine.v:1004]
+INFO: [Synth 8-5546] ROM "M2/R_v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'M3i_1/R_rgb_temp_reg[0]' (LD) to 'M3i_1/R_rgb_temp_reg[1]'
+INFO: [Synth 8-3886] merging instance 'M3i_1/R_rgb_temp_reg[1]' (LD) to 'M3i_1/R_rgb_temp_reg[2]'
+INFO: [Synth 8-3886] merging instance 'M3i_1/R_rgb_temp_reg[2]' (LD) to 'M3i_1/R_rgb_temp_reg[3]'
+INFO: [Synth 8-3886] merging instance 'M3i_1/R_rgb_temp_reg[4]' (LD) to 'M3i_1/R_rgb_temp_reg[5]'
+INFO: [Synth 8-3886] merging instance 'M3i_1/R_rgb_temp_reg[5]' (LD) to 'M3i_1/R_rgb_temp_reg[6]'
+INFO: [Synth 8-3886] merging instance 'M3i_1/R_rgb_temp_reg[6]' (LD) to 'M3i_1/R_rgb_temp_reg[7]'
+INFO: [Synth 8-3886] merging instance 'M3i_1/R_rgb_temp_reg[8]' (LD) to 'M3i_1/R_rgb_temp_reg[9]'
+INFO: [Synth 8-3886] merging instance 'M3i_1/R_rgb_temp_reg[9]' (LD) to 'M3i_1/R_rgb_temp_reg[10]'
+INFO: [Synth 8-3886] merging instance 'M3i_1/R_rgb_temp_reg[10]' (LD) to 'M3i_1/R_rgb_temp_reg[11]'
+INFO: [Synth 8-3886] merging instance 'M3i_1/O_rgb_data_reg[0]' (FDCE) to 'M3i_1/O_rgb_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'M3i_1/O_rgb_data_reg[1]' (FDCE) to 'M3i_1/O_rgb_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'M3i_1/O_rgb_data_reg[2]' (FDCE) to 'M3i_1/O_rgb_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'M3i_1/O_rgb_data_reg[4]' (FDCE) to 'M3i_1/O_rgb_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'M3i_1/O_rgb_data_reg[5]' (FDCE) to 'M3i_1/O_rgb_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'M3i_1/O_rgb_data_reg[6]' (FDCE) to 'M3i_1/O_rgb_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'M3i_1/O_rgb_data_reg[8]' (FDCE) to 'M3i_1/O_rgb_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'M3i_1/O_rgb_data_reg[9]' (FDCE) to 'M3i_1/O_rgb_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'M3i_1/O_rgb_data_reg[10]' (FDCE) to 'M3i_1/O_rgb_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_2/M4/count_cishu_reg[15]' (FDCE) to 'i_2/M4/count_cishu_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_2/M4/count_cishu_reg[14]' (FDCE) to 'i_2/M4/count_cishu_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_2/M4/count_cishu_reg[13]' (FDCE) to 'i_2/M4/count_cishu_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_2/M4/count_cishu_reg[11]' (FDCE) to 'i_2/M4/count_cishu_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_2/M4/count_cishu_reg[12]' (FDCE) to 'i_2/M4/count_cishu_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_2/M4/count_cishu_reg[9]' (FDCE) to 'i_2/M4/count_cishu_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_2/M4/count_cishu_reg[2]' (FDCE) to 'i_2/M4/count_cishu_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_2/M4/count_cishu_reg[8]' (FDCE) to 'i_2/M4/count_cishu_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_2/M4/count_cishu_reg[7]' (FDCE) to 'i_2/M4/count_cishu_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/M4/\count_cishu_reg[1] )
+INFO: [Synth 8-3886] merging instance 'i_2/M4/count_cishu_reg[10]' (FDCE) to 'i_2/M4/count_cishu_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_2/M4/count_cishu_reg[4]' (FDCE) to 'i_2/M4/count_cishu_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_2/M4/count_cishu_reg[3]' (FDCE) to 'i_2/M4/count_cishu_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_2/M4/count_cishu_reg[5]' (FDCE) to 'i_2/M4/count_cishu_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_2/M4/count_cishu_reg[6]' (FDCE) to 'i_2/M4/count_cishu_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/M4/\state_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_2/M4/num_gewei_reg[2]' (FDC) to 'i_2/M4/num_gewei_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/M4/\num_gewei_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (state_reg[3]) is unused and will be removed from module sale.
+WARNING: [Synth 8-3332] Sequential element (count_cishu_reg[1]) is unused and will be removed from module sale.
+WARNING: [Synth 8-3332] Sequential element (num_gewei_reg[3]) is unused and will be removed from module sale.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:56 . Memory (MB): peak = 826.402 ; gain = 520.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|vga_display | A*(B:0x50)       | 21     | 7      | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|top_layer   | PCIN+(A:0x0):B+C | 30     | 12     | 21     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |vga_display__GB0 |           1|      2603|
+|2     |vga_display__GB1 |           1|      5722|
+|3     |top_layer__GC0   |           1|      2516|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:01:07 . Memory (MB): peak = 954.746 ; gain = 649.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:07 . Memory (MB): peak = 954.746 ; gain = 649.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |vga_display__GB0 |           1|      2603|
+|2     |vga_display__GB1 |           1|      5722|
+|3     |top_layer__GC0   |           1|      2516|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:09 . Memory (MB): peak = 1022.145 ; gain = 716.734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:10 . Memory (MB): peak = 1022.145 ; gain = 716.734
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:10 . Memory (MB): peak = 1022.145 ; gain = 716.734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:10 . Memory (MB): peak = 1022.145 ; gain = 716.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:10 . Memory (MB): peak = 1022.145 ; gain = 716.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:10 . Memory (MB): peak = 1022.145 ; gain = 716.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:10 . Memory (MB): peak = 1022.145 ; gain = 716.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |image_rom     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |image_rom |     1|
+|2     |BUFG      |     2|
+|3     |CARRY4    |   194|
+|4     |DSP48E1   |     1|
+|5     |DSP48E1_2 |     1|
+|6     |LUT1      |   180|
+|7     |LUT2      |   417|
+|8     |LUT3      |   188|
+|9     |LUT4      |   224|
+|10    |LUT5      |   451|
+|11    |LUT6      |  1677|
+|12    |MUXF7     |   214|
+|13    |MUXF8     |    82|
+|14    |FDCE      |   275|
+|15    |FDPE      |     3|
+|16    |FDRE      |    14|
+|17    |IBUF      |    23|
+|18    |OBUF      |    21|
++------+----------+------+
+
+Report Instance Areas: 
++------+-----------+-------------+------+
+|      |Instance   |Module       |Cells |
++------+-----------+-------------+------+
+|1     |top        |             |  3970|
+|2     |  M0       |clk_50M      |     2|
+|3     |  M1_shang |key_filter   |    64|
+|4     |  M1_sw0   |key_filter_0 |    73|
+|5     |  M1_sw1   |key_filter_1 |    72|
+|6     |  M1_xia   |key_filter_2 |    61|
+|7     |  M1_you   |key_filter_3 |    61|
+|8     |  M1_zhong |key_filter_4 |    63|
+|9     |  M1_zuo   |key_filter_5 |    61|
+|10    |  M2       |vga_driver   |  1988|
+|11    |  M3       |vga_display  |    49|
+|12    |  M4       |sale         |  1430|
++------+-----------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:10 . Memory (MB): peak = 1022.145 ; gain = 716.734
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:01:04 . Memory (MB): peak = 1022.145 ; gain = 359.090
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:10 . Memory (MB): peak = 1022.145 ; gain = 716.734
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 515 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+106 Infos, 70 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:14 . Memory (MB): peak = 1022.145 ; gain = 728.266
+INFO: [Common 17-1381] The checkpoint 'D:/Code/Project/Vivado/VD_end/VD_end.runs/synth_1/top_layer.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_layer_utilization_synth.rpt -pb top_layer_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1022.145 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  1 10:26:24 2022...
